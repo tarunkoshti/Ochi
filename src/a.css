@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    position: relative;
+    overflow: hidden;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #212121;
+    bottom: -5%;
+    left: -100%;
+    transition: all ease .5s;
+}
+
+a:hover::after {
+    left: 0;
+}
