@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import LocomotiveScroll from 'locomotive-scroll';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
+import smallimg from "../assets/content-image01.jpg"
 
 const LandingPage = () => {
 
@@ -17,7 +18,9 @@ const LandingPage = () => {
                                 initial={{ width: "0" }}
                                 animate={{ width: "9.5vw" }}
                                 transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                                className='w-[9.5vw] h-[6vw] bg-red-500 rounded-lg bg-[url("/public/images/content-image01.jpg")] bg-cover bg-center'></motion.div>}
+                                className='w-[9.5vw] h-[6vw] bg-red-500 rounded-lg bg-cover bg-center'
+                                style={{ backgroundImage: `url(${smallimg})` }}
+                                ></motion.div>}
                             <h1 className="uppercase text-[8vw] font-['Bebas_Neue'] leading-[7vw] tracking-wide font-semibold">{item}</h1>
                         </div>
                     </div>

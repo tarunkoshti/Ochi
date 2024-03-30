@@ -2,6 +2,11 @@ import React from 'react'
 import FeaturedButton from './FeaturedButton'
 import LocomotiveScroll from 'locomotive-scroll'
 import { motion, useAnimation } from 'framer-motion'
+import img1 from "../assets/Fyde_Illustration_Crypto_2-1326x1101.png"
+import img2 from "../assets/Vise_front2-1326x1101.jpg"
+import img3 from "../assets/Frame-3875-1326x1101.jpg"
+import img4 from "../assets/PB-Front-4-1326x1101.png"
+import img5 from "../assets/William-Barnes-1-300x300.png"
 
 const FeaturedProject = () => {
 
@@ -61,7 +66,7 @@ const FeaturedProject = () => {
                                 transition={{ ease: [0.7, 0, 0.84, 0] }}
                             >
                                 <img
-                                    className='rounded-lg' src="/public/images/Fyde_Illustration_Crypto_2-1326x1101.png" alt="" />
+                                    className='rounded-lg' src={img1} alt="" />
                             </motion.div>
                         </motion.div>
 
@@ -93,7 +98,7 @@ const FeaturedProject = () => {
                             <motion.div initial={{ scale: 1 }}
                                 animate={cardsImage[1]}
                                 transition={{ ease: [0.7, 0, 0.84, 0] }}>
-                                <img className='rounded-lg' src="/public/images/Vise_front2-1326x1101.jpg" alt="" />
+                                <img className='rounded-lg' src={img2} alt="" />
                             </motion.div>
                         </motion.div>
 
@@ -128,7 +133,7 @@ const FeaturedProject = () => {
                                 initial={{ scale: 1 }}
                                 animate={cardsImage[2]}
                                 transition={{ ease: [0.7, 0, 0.84, 0] }}>
-                                <img className='rounded-lg' src="/public/images/Frame-3875-1326x1101.jpg" alt="" />
+                                <img className='rounded-lg' src={img3} alt="" />
                             </motion.div>
 
                         </motion.div>
@@ -163,7 +168,7 @@ const FeaturedProject = () => {
                                 animate={cardsImage[3]}
                                 transition={{ ease: [0.7, 0, 0.84, 0] }}>
 
-                                <img className='rounded-lg' src="/public/images/PB-Front-4-1326x1101.png" alt="" />
+                                <img className='rounded-lg' src={img4} alt="" />
                             </motion.div>
                         </motion.div>
 
@@ -199,7 +204,7 @@ const FeaturedProject = () => {
                     <div className='w-1/2'>
                         <h1 className='mb-10'>William Barnes</h1>
                         <div>
-                            <img className='h-[8vw] rounded-lg' src="/public/images/William-Barnes-1-300x300.png" alt="" />
+                            <img className='h-[8vw] rounded-lg' src={img5} alt="" />
                             <p className='w-3/4 font-normal mt-10'>
                                 They were transparent about the time and the stages of the project. The end product is high quality, and I feel confident about how they were handholding the client through the process. I feel like I can introduce them to someone who needs to put a sales deck together from scratch, and they would be able to handhold the client experience from 0 to 100 very effectively from story to design. 5/5
                             </p>

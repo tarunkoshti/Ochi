@@ -1,5 +1,6 @@
 import LocomotiveScroll from 'locomotive-scroll';
 import React, { useEffect, useState } from 'react'
+import topview from "../assets/Top-Viewbbcbv-1-scaled.jpg"
 
 const Eyes = ({
     bgColor = '',
@@ -24,7 +25,9 @@ const Eyes = ({
 
     return (
         <div className='eyes w-full h-screen overflow-hidden'>
-            <div data-scroll data-scroll-speed="-.5" className={!bgColor ? `relative w-full h-full bg-[url("/public/images/Top-Viewbbcbv-1-scaled.jpg")] bg-cover bg-center` : `relative w-full h-full ${bgColor} rounded-tr-3xl rounded-tl-3xl py-24`}>
+            <div data-scroll data-scroll-speed="-.5" className={!bgColor ? `relative w-full h-full bg-cover bg-center` : `relative w-full h-full ${bgColor} rounded-tr-3xl rounded-tl-3xl py-24`}
+                style={!bgColor ? { backgroundImage: `url(${topview})` } : {}}
+            >
                 {bgColor &&
                     <div className='w-full '>
                         <h1 className='text-[12vw] font-["Bebas_Neue"] leading-[11vw] text-center font-semibold py-5'>

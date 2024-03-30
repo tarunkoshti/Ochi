@@ -1,5 +1,6 @@
 import LocomotiveScroll from 'locomotive-scroll'
 import React from 'react'
+import homepagephoto from "../assets/Homepage-Photo-1326x939.jpg"
 
 const About = () => {
 
@@ -38,7 +39,7 @@ const About = () => {
                     </button>
                 </div>
                 <div className='w-1/2 rounded-xl overflow-hidden'>
-                    <img className='w-full' src="/public/images/Homepage-Photo-1326x939.jpg" alt="" />
+                    <img className='w-full' src={homepagephoto} alt="" />
                 </div>
             </div>
         </div>

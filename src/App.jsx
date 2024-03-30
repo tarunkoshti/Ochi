@@ -12,6 +12,11 @@ import gsap, { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger);
 
 import "./a.css"
+import logo1 from "./assets/logo001.svg"
+import logo2 from "./assets/logo002.svg"
+import logo3 from "./assets/logo003.png"
+
+
 
 function App() {
 
@@ -42,11 +47,11 @@ function App() {
       {/* <ClientReview /> */}
       <div ref={boxRef} className='w-full h-screen bg-[#F1F1F1] py-5 flex gap-5 px-14'>
         <div className='w-1/2'>
-          <Cards image="/public/images/logo001.svg" bgcolor="#004D43" btntext="©️2019-2022" />
+          <Cards image={logo1} bgcolor="#004D43" btntext="©️2019-2022" />
         </div>
         <div className='w-1/2 flex gap-5'>
-          <Cards width='w-1/2' image="/public/images/logo002.svg" bgcolor="#212121" btntext="rating 5.0 in clutch" />
-          <Cards width='w-1/2' image="/public/images/logo003.png" bgcolor="#212121" btntext="business bootcamp alumni" />
+          <Cards width='w-1/2' image={logo2} bgcolor="#212121" btntext="rating 5.0 in clutch" />
+          <Cards width='w-1/2' image={logo3} bgcolor="#212121" btntext="business bootcamp alumni" />
 
         </div>
       </div>
