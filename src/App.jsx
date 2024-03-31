@@ -31,6 +31,7 @@ function App() {
         start: "top",
         end: "200%",
         pin: true,
+        pinSpacing: false,
         // markers: true
       }
     })
