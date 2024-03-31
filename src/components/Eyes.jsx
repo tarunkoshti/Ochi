@@ -36,7 +36,7 @@ const Eyes = ({
                             THE PROJECT?
                         </h1>
 
-                        <button className='m-auto uppercase font-medium py-4 px-6 bg-[#212121] text-white rounded-full flex items-center gap-10'>start the project
+                        <button className='m-auto uppercase font-medium py-4 px-6 bg-[#212121] text-white rounded-full flex items-center gap-10 whitespace-nowrap max-sm:text-xs sm:py-4 sm:px-6 max-sm:absolute top-[70%] left-[50%] max-sm:-translate-x-[50%] max-sm:-translate-y-[50%]'>start the project
                             <div className='w-2 h-2 rounded-full bg-white'></div>
                         </button>
                     </div>

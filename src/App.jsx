@@ -22,23 +22,23 @@ function App() {
 
   const boxRef = useRef(null)
 
-  useEffect(() => {
-    const box = boxRef.current
-    gsap.from(box, {
-      y: "1%",
-      scrollTrigger: {
-        trigger: box,
-        start: "top",
-        end: "200%",
-        pin: true,
-        pinSpacing: false,
-        // markers: true
-      }
-    })
-  }, [boxRef.current])
+  // useEffect(() => {
+  //   const box = boxRef.current
+  //   gsap.from(box, {
+  //     y: "1%",
+  //     scrollTrigger: {
+  //       trigger: box,
+  //       start: "top",
+  //       end: "200%",
+  //       pin: true,
+  //       pinSpacing: false,
+  //       // markers: true
+  //     }
+  //   })
+  // }, [boxRef.current])
 
   return (
-    <div className='w-full min-h-screen text-[#212121] font-[gilroy] bg-[#F1F1F1]'>
+    <div className='w-full min-h-screen text-[#212121] font-[gilroy] bg-[#F1F1F1] relative overflow-hidden'>
       <Navbar />
       <LandingPage />
       <Marquee />
@@ -46,13 +46,13 @@ function App() {
       <Eyes />
       <FeaturedProject />
       {/* <ClientReview /> */}
-      <div ref={boxRef} className='w-full h-screen bg-[#F1F1F1] py-5 flex gap-5 px-14 relative'>
-        <div className='w-1/2'>
+      <div ref={boxRef} className='w-full min-h-screen bg-[#F1F1F1] py-0 lg:py-5 lg:flex gap-5 px-5 lg:px-14 relative '>
+        <div className='w-full lg:w-1/2'>
           <Cards image={logo1} bgcolor="#004D43" btntext="©️2019-2022" />
         </div>
-        <div className='w-1/2 flex gap-5'>
-          <Cards width='w-1/2' image={logo2} bgcolor="#212121" btntext="rating 5.0 in clutch" />
-          <Cards width='w-1/2' image={logo3} bgcolor="#212121" btntext="business bootcamp alumni" />
+        <div className='w-full lg:w-1/2  lg:flex gap-5'>
+          <Cards width='w-full lg:w-1/2' image={logo2} bgcolor="#212121" btntext="rating 5.0 in clutch" />
+          <Cards width='w-full lg:w-1/2' image={logo3} bgcolor="#212121" btntext="business bootcamp alumni" />
 
         </div>
       </div>
