@@ -10,7 +10,7 @@ import img5 from "../assets/William-Barnes-1-300x300.png"
 
 const FeaturedProject = () => {
 
-    const locomotiveScroll = new LocomotiveScroll()
+    // const locomotiveScroll = new LocomotiveScroll()
 
     const cards = [useAnimation(), useAnimation(), useAnimation(), useAnimation()]
     const cardsImage = [useAnimation(), useAnimation(), useAnimation(), useAnimation()]
@@ -34,7 +34,7 @@ const FeaturedProject = () => {
     }
 
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full py-5 md:py-20 bg-[#F1F1F1] rounded-tl-3xl rounded-t-3xl'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full py-5 md:py-20 bg-[#F1F1F1] '>
             <div className='w-full py-10 px-14 border border-b-zinc-500'>
                 <h1 className='text-3xl md:text-5xl font-medium'>Featured Projects</h1>
             </div>
@@ -188,7 +188,7 @@ const FeaturedProject = () => {
             </div>
 
             <div className='w-full bg-[#F1F1F1] py-7 md:py-20'>
-                <div className='w-full py-10 px-14 border border-b-zinc-500'>
+                <div className='w-full py-10 px-5 md:px-14 border border-b-zinc-500'>
                     <h1 className='text-3xl md:text-5xl font-medium'>Client's reviews</h1>
                 </div>
 

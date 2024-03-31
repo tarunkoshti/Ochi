@@ -8,7 +8,7 @@ const Eyes = ({
 }) => {
 
     const [rotate, setRotate] = useState(0);
-    const locomotiveScroll = new LocomotiveScroll()
+    // const locomotiveScroll = new LocomotiveScroll()
 
     useEffect(() => {
         window.addEventListener("mousemove", (e) => {
@@ -24,13 +24,13 @@ const Eyes = ({
     })
 
     return (
-        <div className='eyes w-full h-screen overflow-hidden relative'>
-            <div data-scroll data-scroll-speed="-.5" className={!bgColor ? `relative w-full h-full bg-cover bg-center` : `relative w-full h-full ${bgColor} rounded-tr-3xl rounded-tl-3xl py-24`}
+        <div className='eyes w-full h-[50vh] sm:h-screen overflow-hidden relative'>
+            <div data-scroll data-scroll-speed="-.5" className={!bgColor ? `relative w-full h-full bg-cover bg-center` : `relative w-full h-full ${bgColor} rounded-tr-3xl rounded-tl-3xl py-5 sm:py-24`}
                 style={!bgColor ? { backgroundImage: `url(${topview})` } : {}}
             >
                 {bgColor &&
                     <div className='w-full '>
-                        <h1 className='text-[12vw] font-["Bebas_Neue"] leading-[11vw] text-center font-semibold py-5'>
+                        <h1 className='text-[12vw] font-["Bebas_Neue"] leading-[11vw] text-center font-semibold sm:py-5'>
                             READY <br />
                             TO START <br />
                             THE PROJECT?

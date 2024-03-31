@@ -4,10 +4,10 @@ import homepagephoto from "../assets/Homepage-Photo-1326x939.jpg"
 
 const About = () => {
 
-    const locomotiveScroll = new LocomotiveScroll()
+    // const locomotiveScroll = new LocomotiveScroll()
 
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full min-hscreen py-10 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full min-hscreen py-10 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl rounded-br-3xl rounded-bl-3xl -mt-10 md:mt-0'>
             <div className='w-full'>
                 <h1 className='w-full md:w-5/6 md:px-14 px-5 py-7 md:py-16 text-2xl md:text-5xl font-medium'>Ochi is a strategic partner for fast-grow­ing tech businesses that need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great peo­ple.</h1>
             </div>

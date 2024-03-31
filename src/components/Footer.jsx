@@ -3,10 +3,10 @@ import React from 'react'
 
 const Footer = () => {
 
-    const locomotiveScroll = new LocomotiveScroll()
+    // const locomotiveScroll = new LocomotiveScroll()
 
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full min-h-screen bg-[#F1F1F1] md:flex pt-20 px-14 rounded-tl-3xl rounded-tr-3xl'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full min-h-screen bg-[#F1F1F1] md:flex pt-20 px-14 rounded-tl-3xl rounded-tr-3xl max-md:absolute top-[99.5%] '>
             <div className='w-1/2 md:relative'>
                 <h1 className='font-["Bebas_Neue"] text-[8vw] leading-[7vw]'>EYE-</h1>
                 <h1 className='font-["Bebas_Neue"] text-[8vw] leading-[7vw]'>OPENING</h1>

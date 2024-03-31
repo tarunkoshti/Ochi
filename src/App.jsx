@@ -15,10 +15,57 @@ import "./a.css"
 import logo1 from "./assets/logo001.svg"
 import logo2 from "./assets/logo002.svg"
 import logo3 from "./assets/logo003.png"
+import LocomotiveScroll from 'locomotive-scroll'
 
 
 
 function App() {
+
+
+  // const locomotiveScroll = new LocomotiveScroll()
+
+  useEffect(() => {
+    let locomotiveScroll = null;
+
+    // Function to initialize Locomotive Scroll
+    const initLocomotiveScroll = () => {
+      locomotiveScroll = new LocomotiveScroll({
+        // Add your Locomotive Scroll options here
+      });
+    };
+
+    // Function to destroy Locomotive Scroll
+    const destroyLocomotiveScroll = () => {
+      if (locomotiveScroll) {
+        locomotiveScroll.destroy();
+        locomotiveScroll = null;
+      }
+    };
+
+    // Function to handle viewport size changes
+    const handleResize = () => {
+      const viewportWidth = window.innerWidth;
+
+      // Check viewport width and initialize/destroy Locomotive Scroll accordingly
+      if (viewportWidth > 768) {
+        initLocomotiveScroll();
+      } else {
+        destroyLocomotiveScroll();
+      }
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Event listener for viewport size changes
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      destroyLocomotiveScroll();
+    };
+  }, []);
 
   const boxRef = useRef(null)
 
@@ -38,7 +85,7 @@ function App() {
   // }, [boxRef.current])
 
   return (
-    <div className='w-full min-h-screen text-[#212121] font-[gilroy] bg-[#F1F1F1] relative overflow-hidden'>
+    <div className='w-full min-h-screen text-[#212121] font-[gilroy] bg-[#F1F1F1] relative '>
       <Navbar />
       <LandingPage />
       <Marquee />

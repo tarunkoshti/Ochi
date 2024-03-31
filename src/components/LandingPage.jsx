@@ -6,10 +6,10 @@ import smallimg from "../assets/content-image01.jpg"
 
 const LandingPage = () => {
 
-    const locomotiveScroll = new LocomotiveScroll()
+    // const locomotiveScroll = new LocomotiveScroll()
 
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full min-h-screen bg-[#F1F1F1] pt-1'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full md:min-h-screen bg-[#F1F1F1] pt-1 h-[80vh]'>
             <div className='textstructure mt-20 md:mt-40 px-5 md:px-14'>
                 {["We Create", "EYE-OPENING", "PRESENTATIONS"].map((item, index) => (
                     <div key={index} className="masker overflow-hidden">
