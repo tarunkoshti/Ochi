@@ -46,7 +46,7 @@ function App() {
       <Eyes />
       <FeaturedProject />
       {/* <ClientReview /> */}
-      <div ref={boxRef} className='w-full h-screen bg-[#F1F1F1] py-5 flex gap-5 px-14'>
+      <div ref={boxRef} className='w-full h-screen bg-[#F1F1F1] py-5 flex gap-5 px-14 relative'>
         <div className='w-1/2'>
           <Cards image={logo1} bgcolor="#004D43" btntext="©️2019-2022" />
         </div>

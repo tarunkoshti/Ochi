@@ -24,7 +24,7 @@ const Eyes = ({
     })
 
     return (
-        <div className='eyes w-full h-screen overflow-hidden'>
+        <div className='eyes w-full h-screen overflow-hidden relative'>
             <div data-scroll data-scroll-speed="-.5" className={!bgColor ? `relative w-full h-full bg-cover bg-center` : `relative w-full h-full ${bgColor} rounded-tr-3xl rounded-tl-3xl py-24`}
                 style={!bgColor ? { backgroundImage: `url(${topview})` } : {}}
             >
